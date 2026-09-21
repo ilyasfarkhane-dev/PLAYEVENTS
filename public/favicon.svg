@@ -1,5 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="-48 0 696 696" role="img" aria-labelledby="title">
-  <title id="title">PlayEvents</title>
-  <path fill="#c91e3e" d="M40 117 A305 305 0 1 1 40 578 L81 531 A243 243 0 1 0 81 165 Z"/>
-  <path fill="#c91e3e" d="M201 204 474 351 201 499 Z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" aria-labelledby="title" role="img" viewBox="-48 0 696 696"><title id="title">PlayEvents</title><path fill="#c91e3e" d="M40 117 A305 305 0 1 1 40 578 L81 531 A243 243 0 1 0 81 165 Z"/><path fill="#c91e3e" d="M201 204 474 351 201 499 Z"/></svg>
