@@ -2,10 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import Logo from './logo';
-
-function Arrow() {
-  return <span aria-hidden="true" className="arrow">↗</span>;
-}
+import { Arrow } from './icons';
 
 const links = [
   { href: '#apropos', label: 'À propos' },
@@ -38,7 +35,12 @@ export default function Header() {
       <div className="header-inner container">
         <Logo />
         <nav className="header-nav" aria-label="Navigation principale" id="site-nav">
-          {links.map(l => <a key={l.href} href={l.href} onClick={() => setOpen(false)}>{l.label}</a>)}
+          {links.map(l => (
+            <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
+              {l.label}
+              <Arrow className="nav-arrow" />
+            </a>
+          ))}
           <a className="nav-cta" href="#contact" onClick={() => setOpen(false)}>Demander un devis <Arrow /></a>
         </nav>
         <div className="header-actions">

@@ -17,7 +17,13 @@ export const metadata: Metadata = {
   openGraph: { title, description, type: 'website', locale: 'fr_MA', siteName: 'PLAYEVENTS', url: siteUrl, images: [{ url: '/images/absen.jpg', width: 1920, height: 1080, alt: 'Scène événementielle avec écran LED' }] },
   twitter: { card: 'summary_large_image', title, description, images: ['/images/absen.jpg'] },
 };
-export const viewport: Viewport = { width: 'device-width', initialScale: 1, themeColor: '#111214' };
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: 'cover',
+  themeColor: '#111214',
+};
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
