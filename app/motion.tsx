@@ -14,6 +14,10 @@ export default function Motion() {
   useEffect(() => {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
       document.documentElement.classList.add('splash-ready');
+      document.querySelectorAll<HTMLVideoElement>('.hero-video').forEach(v => {
+        v.pause();
+        v.removeAttribute('autoplay');
+      });
       return;
     }
 

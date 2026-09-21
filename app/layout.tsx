@@ -11,6 +11,10 @@ export const metadata: Metadata = {
   title,
   description,
   applicationName: 'PLAYEVENTS',
+  icons: {
+    icon: [{ url: '/favicon.svg', type: 'image/svg+xml' }],
+    shortcut: '/favicon.svg',
+  },
   keywords: ['production événementielle Maroc', 'production audiovisuelle Maroc', 'captation multicaméra', 'écrans LED indoor', 'sonorisation événementielle', 'location matériel événementiel Maroc', 'live streaming conférence'],
   alternates: siteUrl ? { canonical: siteUrl } : undefined,
   robots: { index: true, follow: true },

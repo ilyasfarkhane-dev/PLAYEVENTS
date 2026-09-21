@@ -76,13 +76,7 @@ export default function Splash() {
     <div className={`splash${done ? ' is-done' : ''}`} role="status" aria-live="polite" aria-label={`Chargement ${progress}%`}>
       <div className="splash-inner">
         <div className="splash-brand" aria-hidden="true">
-          <span className="brand-mark">
-            <span className="brand-play">PLAY</span>
-            <svg className="brand-symbol" viewBox="0 0 18 22" focusable="false">
-              <path fill="currentColor" d="M1.2 1.1 16.8 11 1.2 20.9Z" />
-            </svg>
-          </span>
-          <span className="brand-events">EVENTS</span>
+          <img className="brand-logo" src="/log-playevents-light.png" alt="" width={280} height={129} />
         </div>
         <div className="splash-meter">
           <div className="splash-track" aria-hidden="true">
