@@ -30,7 +30,7 @@
 .button-red{position:relative;overflow:hidden}.button-red>*{position:relative}
 .hero{min-height:720px;background:#101114}
 .hero-photo{position:absolute;inset:0;z-index:-2;overflow:hidden;translate:0 var(--hero-shift,0px);will-change:translate}
-.hero-video{width:100%;height:100%;object-fit:cover;object-position:center;display:block;filter:contrast(1.06) saturate(.86)}
+.hero-video{width:100%;height:100%;object-fit:cover;display:block}
 .hero-shade{background:linear-gradient(90deg,rgba(12,13,17,.98) 0%,rgba(12,13,17,.91) 33%,rgba(12,13,17,.52) 70%,rgba(12,13,17,.25)),linear-gradient(0deg,rgba(8,8,10,.7),transparent 50%);overflow:hidden}
 .hero-shade:after{content:"";position:absolute;inset:-30% -40%;background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.09) 50%,transparent 62%);animation:hero-sweep 8.5s ease-in-out 1.1s infinite}
 .hero-grain{position:absolute;inset:-20%;pointer-events:none;z-index:1;opacity:.22;mix-blend-mode:overlay;background-image:repeating-radial-gradient(circle at 18% 32%,rgba(255,255,255,.07) 0 1px,transparent 1px 3px),repeating-linear-gradient(0deg,rgba(0,0,0,.05) 0 1px,transparent 1px 3px);animation:hero-grain 1.2s steps(4) infinite}
